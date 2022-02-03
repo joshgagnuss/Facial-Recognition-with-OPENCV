@@ -31,6 +31,7 @@ while True:
         cv.putText(frame, str(people[label]), (40,40), cv.FONT_HERSHEY_COMPLEX, 1.0, (0,255,0), 1)
         cv.rectangle (frame, (x,y), (x+w, y+h), (0,255,0), 1)
         cv.imshow('Feed', frame)
+        
         key = cv.waitKey(1)
         if key == ord('q'):
             break
